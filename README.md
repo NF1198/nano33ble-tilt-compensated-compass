@@ -1,9 +1,28 @@
-# Tilt-compensated Compass for Arduino Nano 33 BLE
+# Tilt-compensated Compass for Arduino Nano 33 BLE Sense
 
-This example project demonstrates how to use the Arudino Nano 33 BLE
+This project demonstrates using the [Arduino Nano 33 BLE Sense](https://docs.arduino.cc/hardware/nano-33-ble-sense)
 as a tilt-compensated compass.
 
+## Features
+* Computes and reports heading in degrees
+* Compensates for pitch or roll error
+* Overridable offset for [magnetic declination correction](https://www.ngdc.noaa.gov/geomag/calculators/magcalc.shtml#declination)
+* [Low-pass filter](lib/butterworth_iir_2nd/butterworth_iir_2nd.h) to improve data quality
+* Generates solutions at 120Hz
+
 ![Nano33BLE-Compass](doc/images/nano33ble-compass.png)
+
+# Algorithm Overview
+```
+* Read ACC(X,Y,Z) and MAG(X,Y,Z) from the IMU.
+* Apply low-pass filters to raw ACC and MAG readings
+* Compute MagWest (mw) as cross_product(ACC, MAG);
+* Compute MagNorth (mn) as cross_product(mw, ACC);
+--> Heading components are mw_x and mn_x
+* Apply low-pass filter to mw_x and mn_x
+--> Return heading as atan2(mw_x, mn_x)
+```
+Based on concepts in Mahony AHRS 3D Fusion Filter.
 
 # Hardware
 * [Arduino Nano 33 BLE Sense](https://docs.arduino.cc/hardware/nano-33-ble-sense)
