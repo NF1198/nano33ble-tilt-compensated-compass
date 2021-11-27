@@ -47,7 +47,7 @@ Each [LSM9DS1](https://www.arduino.cc/en/Reference/ArduinoLSM9DS1) sensor is uni
 calibration. You will need to generate a calibration for your device and update the calibration
 constants defined in [compass-support.h](src/compass-support.h).
 
-The algorithm implmented in this project requires accelerometer and magnetometer readings to be nomalized
+The algorithm implemented in this project requires accelerometer and magnetometer readings to be nomalized
 to a sphere of radius 1. The can be accomplished using the included calibration tool in the support project, or 
 by using any other method of [fitting a sphere](https://jekel.me/2015/Least-Squares-Sphere-Fit/).
 
