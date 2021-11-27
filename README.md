@@ -48,7 +48,7 @@ calibration. You will need to generate a calibration for your device and update 
 constants defined in [compass-support.h](src/compass-support.h).
 
 The algorithm implmented in this project requires accelerometer and magnetometer readings to be nomalized
-to a spere of radius 1. The can be accomplished using the included calibration tool the support project, or 
+to a sphere of radius 1. The can be accomplished using the included calibration tool the support project, or 
 by using any other method of [fitting a sphere](https://jekel.me/2015/Least-Squares-Sphere-Fit/).
 
 ![Nano33BLE-Calibration](doc/images/nano33ble-calibration-ui.png)
