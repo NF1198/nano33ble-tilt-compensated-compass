@@ -10,7 +10,7 @@
 // (search for "spherical fit python") for examples.
 // 
 // X, Y, Z offsets correspond to the fitted spherical center
-// MAG is a multiplier that scales the fitted sphere to radius 1.0
+// R is a multiplier that scales the fitted sphere to radius 1.0
 // 
 // It is assumed that each set of axes has a simliar gain profile.
 
