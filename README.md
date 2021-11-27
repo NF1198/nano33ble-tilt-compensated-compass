@@ -3,7 +3,7 @@
 This example project demonstrates how to use the Arudino Nano 33 BLE
 as a tilt-compensated compass.
 
-![Nano33BLE-Compass](doc/images/nano33ble-compass-ui.png)
+![Nano33BLE-Compass](doc/images/nano33ble-compass.png)
 
 # Hardware
 * [Arduino Nano 33 BLE Sense](https://docs.arduino.cc/hardware/nano-33-ble-sense)
@@ -14,6 +14,8 @@ as a tilt-compensated compass.
 * [Python](https://www.python.org/downloads/) (Platform.io requires Python)
 
 Note: This project is not intended to be used from the Arudino IDE.
+
+![Nano33BLE-Compass-GUI](doc/images/nano33ble-compass-ui.png)
 
 # Build instructions
 1. Download and install Visual Studio Code and Python.
@@ -29,3 +31,5 @@ constants defined in [compass-support.h](src/compass-support.h).
 The algorithm implmented in this project requires accelerometer and magnetometer readings to be nomalized
 to a spere of radius 1. The can be accomplished using the included calibration tool the support project, or 
 by using any other method of [fitting a sphere](https://jekel.me/2015/Least-Squares-Sphere-Fit/).
+
+![Nano33BLE-Calibration](doc/images/nano33ble-calibration-ui.png)
