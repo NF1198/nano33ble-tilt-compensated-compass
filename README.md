@@ -1,15 +1,19 @@
-# Tilt-compensated compass Arduino Nano 33 BLE
+# Tilt-compensated Compass for Arduino Nano 33 BLE
 
 This example project demonstrates how to use the Arudino Nano 33 BLE
 as a tilt-compensated compass.
 
-# Pre-requisites
+![Nano33BLE-Compass](doc/images/nano33ble-compass-ui.png)
+
+# Hardware
 * [Arduino Nano 33 BLE Sense](https://docs.arduino.cc/hardware/nano-33-ble-sense)
+
+# Pre-requisites
 * [Visual Studio Code](https://code.visualstudio.com/download)
 * [Platform.io](https://platformio.org/) (Install from Visual Studio Code)
 * [Python](https://www.python.org/downloads/) (Platform.io requires Python)
 
-Note: This project is not intended to be run from the Arudino IDE.
+Note: This project is not intended to be used from the Arudino IDE.
 
 # Build instructions
 1. Download and install Visual Studio Code and Python.
